@@ -150,9 +150,5 @@ async function handleChargeRefunded(charge: Stripe.Charge) {
   // - Restore inventory if applicable
 }
 
-// Disable body parsing for webhook routes
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+// Route segment config for Next.js App Router
+export const dynamic = 'force-dynamic';
