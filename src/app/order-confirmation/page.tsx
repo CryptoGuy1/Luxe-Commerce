@@ -1,12 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Check, Package, Truck, Mail, ArrowRight } from 'lucide-react';
 
-export default function OrderConfirmationPage() {
+function OrderConfirmationContent() {
   const searchParams = useSearchParams();
   const orderNumber = searchParams.get('order') || 'LX-XXXXXX';
 
@@ -167,5 +167,13 @@ export default function OrderConfirmationPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function OrderConfirmationPage() {
+  return (
+    <Suspense fallback={<div className="pt-32 pb-20 text-center">Loading...</div>}>
+      <OrderConfirmationContent />
+    </Suspense>
   );
 }
