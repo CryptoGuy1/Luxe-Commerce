@@ -2,7 +2,7 @@
 
 A state-of-the-art, modern e-commerce website built with Next.js 14, featuring a luxury aesthetic design with multiple payment integrations.
 
-Vercel: https://luxe-commerce-94c7aa1ll-benjamins-projects-0bc5a52f.vercel.app/
+Vercel: https://luxe-commerce-rho.vercel.app/
 
 ![LUXE Commerce Hero](https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&q=90)
 
